@@ -1,5 +1,7 @@
-import server from './server'
+import app from './app'
 
 const PORT = process.env.PORT || 8080
 
-server.listen(PORT)
+console.log('PORT', PORT)
+
+app.listen(PORT)
