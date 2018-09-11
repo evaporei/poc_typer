@@ -1,0 +1,26 @@
+{
+  "name": "poc_typer_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib",
+    "start": "node lib/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-preset-env": "1.7.0",
+    "eslint": "5.5.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-config-pagarme-base": "2.0.0",
+    "eslint-plugin-import": "2.14.0"
+  },
+  "dependencies": {
+    "express": "4.16.3",
+    "socket.io": "2.1.1"
+  }
+}
