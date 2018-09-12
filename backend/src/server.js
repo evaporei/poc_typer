@@ -6,8 +6,16 @@ const server = createServer(app)
 
 const io = socketIo(server)
 
-const doStuff = socket => console.log('yo socket yo:', socket)
+const disconnect = (socket) => () => {
+  console.log('disconnect socket:', socket)
+}
 
-io.on('connection', doStuff)
+const connect = socket => {
+  console.log('connect socket:', socket)
 
-export default io
+  socket.on('disconnect', disconnect(socket))
+}
+
+io.on('connection', connect)
+
+export default server
