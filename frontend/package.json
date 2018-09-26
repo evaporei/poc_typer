@@ -18,6 +18,7 @@
     "dev": "nodemon --watch src --exec npm run build"
   },
   "devDependencies": {
-    "nodemon": "1.18.4"
+    "nodemon": "1.18.4",
+    "react-test-renderer": "16.5.2"
   }
 }
